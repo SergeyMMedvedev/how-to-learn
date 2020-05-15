@@ -1,4 +1,3 @@
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -32,7 +31,6 @@
 
 .header__title {
   width: 730px;
-  height: 204px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -76,6 +74,10 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 /*Description*/
 
 .description {
@@ -96,17 +98,22 @@
   font-size: 18px;
   font-weight: normal; 
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  padding: 0;
+  padding: 0; 
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-child {
   margin: 0;
 }
 
@@ -163,16 +170,21 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0 0 20px 0;
 }
 
-/*Feyman*/
+.table__text:nth-of-type(3) {
+  margin: 0;
+}
+
+/*Feynman*/
 
 .feynman {
   position: relative;
@@ -207,6 +219,8 @@
   left: 0;
   bottom: 0;
   z-index: -1;
+  width: 867px;
+  height: 637px;
 }
 
 .feynman__link {
@@ -219,6 +233,10 @@
   text-decoration: none;
   color: black;
   z-index: 1;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
 }
 
 /*Kaufman*/
@@ -255,13 +273,19 @@
   z-index: 1;
 }
 
+.table__text__theme_dark {
+  margin: 0;
+}
+
 .kufman__triangle {
   position: absolute;
   top: 0;
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: 0;
+  z-index: -1;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 /*footer*/
@@ -282,26 +306,23 @@
   margin-bottom: 40px;
 }
 
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .logo_place_footer {
-  position: absolute;
-  left: 0;
-  top: 0;
   background-image: url(../images/logo_place_footer.svg);
   height: 35px; 
 }
 
 .footer__author {
-  position: absolute;
-  margin: 18px 0;
-  left: 0;
-  bottom: 0;
+  margin: 18px auto 18px 0;
   color: #f2f2f2;
   line-height: 25px;
   font-size: 18px;
-}
-
-.footer__column:nth-child(1) {
-  flex-basis: 711px;
 }
 
 .footer__column-heading {
@@ -315,11 +336,22 @@
   line-height: 30px;
   font-size: 18px;
   text-decoration: none;
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 0;
 }
 
-.footer__column-icons {
+.footer__column-link {
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  text-decoration: underline;
+}
+
+.footer__column-icon {
   padding-right: 10px;
 }
-
-
-
