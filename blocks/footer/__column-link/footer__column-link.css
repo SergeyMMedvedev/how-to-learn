@@ -3,4 +3,9 @@
     line-height: 30px;
     font-size: 18px;
     text-decoration: none;
-  }
+    transition: opacity 0.2s ease-out;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
+}
